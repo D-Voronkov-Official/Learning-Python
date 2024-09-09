@@ -214,7 +214,7 @@ Because of that, let's talk about garbage collection
 #*                                                    But what if I want to save a variable in file?
 # There is a way to do that
 
-#*                                                    1. Create a text file and write a variable into it
+#* Create a text file and write a variable into it
 variableToWrite = 23
 # with open("savedVariable.txt", "w") as file:
 #     file.write(variableToWrite)
@@ -246,4 +246,25 @@ noneVar = None
 # We will see how its used in the future lessons
 
 
+
+#*                                                          Garbage collector
+# When variable is no longer in use - it's deleted by garbage collector automatically. 
+# The garbage collector is a process that handles RAM memory (to use it effectively) and runs in parallel with the program
+# There is a good news and the bad ones:
+# Good news - Python will manage the memory usage automatically
+# Bad news - we can't affect garbage collection. We can call it, but there is no guarantee that it will listen to our call
+
+
+# call garbage collector
 print(gc.collect())
+
+print(gc.get_count()) # See how many times garbage collection happened
+
+
+
+#                                                          * Get data from user
+# Before, we typed data that we want to store in the code format. Let's add more interactivity to this process!
+# Imagine a scenario where we are collecting data from user, for example - his name
+# The implementation in code is very easy!
+varFromUser = input("Print your name")
+print(f"Hello {varFromUser}!")
