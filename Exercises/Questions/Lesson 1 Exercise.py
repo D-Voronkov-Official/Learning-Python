@@ -4,21 +4,16 @@
 
 
 # Let's model real life scenarios with our exercises
-# Imagine we are building a web-site and we need to store user information
+# Imagine we are creating a textual dungeon-crawler
 #? BONUS POINTS - ask user to type the variable data all by themselves
 
-                                    # First of all we need to store the most basic information - email and password
-# 1. Create a variable that will store user email
+                                    # First of all we need to store the most basic information, for example - character name
+# 1. Create a variable that will store character name
 
 
 
 
-# 2. Create a variable that will store user password.  
-#? NOTE - in the real life scenarios we won't be storing password as a plain string. But for the purpose of the exercise lets imagine that it is a string
-
-
-
-                                    #  Okay, we are done with the basics. But what else can be stored as user data?
+                                    #  Okay, we are done with the name. But what else can be stored as user data?
 # Find your usage scenario and create a fields that will have variables with types:
 
 
@@ -63,10 +58,7 @@
 
 
 
-
-
-
-
+# Check how many times garbage collection was called
 
 
 
