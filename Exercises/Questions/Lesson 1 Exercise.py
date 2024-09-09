@@ -15,6 +15,7 @@
 
                                     #  Okay, we are done with the name. But what else can be stored as user data?
 # Find your usage scenario and create a fields that will have variables with types:
+#? HINT - if you are getting data from user be sure that the value have the correct type (if not sure - check with the type command)
 
 
 #Integer
@@ -44,8 +45,15 @@
 # Insert all the data in the text file and save it!
 
 
+                                                                #! Challenge section
 
-                                                                #? CHALLENGE
+
+
+                                                                #? DEFAULT CHALLENGE
+# If you chose to get data straight from user - you may notice, that all the values are stored as strings. Of course, we can change it manually. 
+# But how can we check whether the type of variable is exactly a string without using type function?
+
+                                                                #? EXTRA HARD CHALLENGE
 # This section covers topics that were not covered in the lesson, so you can challenge yourself finding solution to the real case scenarios by yourself
 # Be aware, that the tasks might be a little bit too hard for beginners 
 # Although I mentioned that we can save the data in the text file, there is also another way - by using Pickle framework
