@@ -61,6 +61,7 @@ List of all variable types can be found here:
 # possible to run out of memory and get an OutOfMemoryError.
 intVar = 1
 
+
 # Okay, we do know that the variable above is int. But how can we check it? 
 # In order to do that we can use #? type 
 print(type(intVar))
@@ -68,6 +69,17 @@ print(type(intVar))
 #print() - print something on the screen. Inside the parentheses is what we want to print
 # type() - command that gets us the type of the variable - inside the parentheses - variable which type we want to know 
 
+
+#? Note!
+# If we reassign variable value - new value will be stored and the old one will be deleted
+intVar = 23
+print(f"intVar value is: {intVar}")
+# WOW! Another new construction. That way we can connect python code with written text
+# But don't worry, it's not hard as it may look like
+# f"text {python code} user text"         - let's break it
+# f means that we will be formatting the string
+# {} - everything inside must be python code. If we will type intVar without brackets - it will print only the variable name
+# Everything else - just normal text that we write by ourselves. It can contain anything you would like
 
 
 
