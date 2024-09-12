@@ -5,9 +5,14 @@
    This file contains learning notes and covers "variables" topic
 """
 
-
+# During the real life scenarios, you will often come to the cases where you won't be always writing code entirely by yourself. 
+# Sometimes you will be using files that were written by other people
+# "import" statement telling the compiler to look at this specific files. In this case we are using built-in Python modules - sys and gc
+# Each import must be on the new line
 import sys 
 import gc
+# If we don't want to import entire gc class and just get a specific method we can rewrite it with this construction:
+#from gc import get_count
 
                                         ######################################################################
                                         #  !                                Variables                        #
@@ -275,7 +280,6 @@ noneVar = None
 # call garbage collector
 print(gc.collect())
 
-print(gc.get_count()) # See how many times garbage collection happened
 
 
 
