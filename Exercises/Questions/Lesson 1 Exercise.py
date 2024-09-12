@@ -47,16 +47,32 @@
 
                                                                 #! Challenge section
 
-
+"""
+        This section covers topics that were not covered in the lesson, so you can challenge yourself finding solution to the real case scenarios by yourself   
+        Be aware, that the tasks might be a little bit too hard for beginners. Because of that, I suggest to go back to these challenges after a few next lessons
+"""
 
                                                                 #? DEFAULT CHALLENGE
 # If you chose to get data straight from user - you may notice, that all the values are stored as strings. Of course, we can change it manually. 
-# But how can we check whether the type of variable is exactly a string without using type function?
+# But how can we check whether the type of variable is exactly a string without using "type" function?
 
                                                                 #? EXTRA HARD CHALLENGE
-# This section covers topics that were not covered in the lesson, so you can challenge yourself finding solution to the real case scenarios by yourself
-# Be aware, that the tasks might be a little bit too hard for beginners 
-# Although I mentioned that we can save the data in the text file, there is also another way - by using Pickle framework
+                                            #* a. Imagine we are asking the user to write some number. How can we check, if the user entered only numbers and nothing else?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                #* b. Although I mentioned that we can save the data in the text file, there is also another way - by using Pickle framework
 # Save data in a file using Pickle
 
 
@@ -66,7 +82,8 @@
 
 
 
-# Check how many times garbage collection was called
+
+
 
 
 
