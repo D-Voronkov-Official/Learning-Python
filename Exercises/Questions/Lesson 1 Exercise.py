@@ -1,5 +1,5 @@
                                         ######################################################################
-                                        #  !                                Variables                        #
+                                        #  !                    Variables. Default section                   #                      
                                         ######################################################################
 
 
@@ -43,6 +43,7 @@
 
 
 # Insert all the data in the text file and save it!
+
 
 
                                                                 #! Challenge section

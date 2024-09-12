@@ -1,5 +1,5 @@
                                         ######################################################################
-                                        #  !                                Variables                        #
+                                        #  !                                Variables. Default section       #
                                         ######################################################################
 
 
@@ -77,8 +77,6 @@ print(characterData)
 with open("characterData.txt", "w") as file:
     file.write(characterData)
 
-
-                                                        #Check how many times garbage collection was called
 
 
                                                                 #! Challenge section
