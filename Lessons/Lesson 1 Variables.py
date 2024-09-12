@@ -211,6 +211,23 @@ As a matter of fact, some of them are deleted from memory even before the progra
 Because of that, let's talk about garbage collection
 """
 
+#* Multiline printing
+# What if we want to print multiple lines on the console?
+# We can use multiple print statements 
+print("This is the demonstration")
+print("Of usage of multiple print statements")
+print("It allows us to print several lines easily")
+print("-------------------------------------------------------------")
+# It might seem like a good solution, although, it isn't. We can easily simplify this construction by using multiple line string:
+# Identation can be set manually
+multiline = """
+This is the demonstration
+      Of usage of multiple print statements
+         Which uses only 1 print statement
+            How convinient!
+"""
+print(multiline)
+
 #*                                                    But what if I want to save a variable in file?
 # There is a way to do that
 
@@ -266,5 +283,6 @@ print(gc.get_count()) # See how many times garbage collection happened
 # Before, we typed data that we want to store in the code format. Let's add more interactivity to this process!
 # Imagine a scenario where we are collecting data from user, for example - his name
 # The implementation in code is very easy!
-varFromUser = input("Print your name")
+varFromUser = input("Print your name: ")
+print(type(varFromUser))  #? NOTE - By default the value will always have str type. 
 print(f"Hello {varFromUser}!")
