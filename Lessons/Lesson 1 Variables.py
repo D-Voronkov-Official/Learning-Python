@@ -140,6 +140,14 @@ print("------------------------------------------")
    Plus, it's not primitive, so it wont fit in our classification
 """
 
+"""
+   #? NOTE
+   We can create multiple variables with one line
+"""
+var1, var2, var3, var4 = 23, 43, 21.3, 74  #? IMPORTANT - be sure that the amount of variable names and amount of values are the same
+#? IMPORTANT!!! - it's always a good practice to use "one line" creation for the variables with the same type
+
+
 #*                                                             2. Boolean type:
 # Can contain either True or False
 boolTrueVar = True
