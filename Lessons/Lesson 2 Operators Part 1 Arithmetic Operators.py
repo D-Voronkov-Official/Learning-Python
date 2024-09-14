@@ -114,3 +114,13 @@ print(f"Result of 21 //4 is: {floorDivVar}") # The result will be 5. But why is 
 
 # Because of that approach, even if we use floor division on the equation like 23//4, the result will still be 5
 print(f"Result of 23 //4 is: {23//4}") # 23 / 4 = 5.75. If we will round it normally, the result will be 6. But because floor division "rounds" number just by removing floating point part, the result is still 5
+
+
+
+"""
+#? NOTE
+First 5 arithmetic operators works greatly with booleans as well. Because of that, the construction like: True - False is possible (which will result on 1 or True since 1 - 0 = 1)
+However, in real life scenarious the usage of such constructions is highly unlikely. Most of the time we will be using booleans with comparison operators 
+(which we will cover in the next lesson)
+
+"""
