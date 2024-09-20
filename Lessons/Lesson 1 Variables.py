@@ -207,6 +207,11 @@ print(f"Values is: {intToStr} and the type is: {type(intToStr)}")
 # Conversion is two directional
 strToInt = int("13")
 print(f"Values is: {strToInt} and the type is: {type(strToInt)}")
+"""
+#?    NOTE
+Strings are immutable. Which means that if we are assigning new value to the string variable - we are basicaly erasing the old variable and creating a new one 
+(possibly with new space in memory)
+"""
 
 """
 #?       IMPORTANT
