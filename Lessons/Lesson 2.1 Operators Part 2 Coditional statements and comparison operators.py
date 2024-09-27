@@ -35,6 +35,45 @@ elif secondVar == 32:  # if want different actions depends on different conditio
 else:
     print("Neither of conditions above is true")
 
+# But what if we have a huge amount of different cases? In that case the code might be messy and ineffective
+"""
+DON'T DO LIKE THAT
+
+if firstVar == 123:
+    print("First values is 123")
+elif secondVar == 32:  # if want different actions depends on different conditions we can use elif statement. If the statemens above are false, that have a chance to trigger
+# Be aware, that if any of the statements above is true - this will not trigger
+    print("Second value is 32")
+elif secondVar == 3:
+    print(0)
+elif secondVar == 0:
+    print(213)
+elif secondVar == 543:
+    print(534)
+else:
+    print("Neither of conditions above is true")
+"""
+#? WHAT IS WRONG WITH THE CODE ABOVE?
+# Imagine we have a variable that is equal to 543. In that case Python must compare all the conditions above, access them and only then activate the code inside this condition
+# But what if we have 10 different conditions or more? Then it will take a lot of time for comparison! 
+# In this case it's better to use match statement:
+match firstVar:
+    case 1:
+        print(1)
+    case 2:
+        print(2)
+    case 3: 
+        print(3)
+    case _:             # Activates when all the cases above are false
+        pass            # This keyword is usually used as a stub (mock implementation). When we don't have a code yet, but defining that there WILL BE an implementation
+
+"""
+    #? RULE OF THUMB
+#* How to decide when to use and where?
+# Use "match" if you have more than 5 potential conditions, because that way you code will run faster
+# Otherwise - feel free to use elif 
+"""
+
 
 # But what if we want to test on different conditions and apply the action if all of them are met?
 # In this case - "and" keyword is your best friend!
@@ -43,6 +82,10 @@ print("and keyword")
 if firstVar == 23 and secondVar == 32:   
     print("Both conditions are met")    # Will only trigger if the firstVar is 23 and secondVar is 32. If at least one condition is false - this will be skipped
 
+# and keyword can also be replaced with & symbol
+# However, it preferable to use "and" keyword, because it's much better for code readability, since it replicate human language
+if firstVar == 23 & secondVar == 32:   
+    print("And is replaced with &")    
 """"
     #? IMPORTANT
     We can have as many conditions inside the if statement as we want. Although, be mindul about code readibility. Sometimes it's not wise to have a lot of conditions altogether.
@@ -52,6 +95,8 @@ print("-------------------------------")
 print("'or' keyword")
 if firstVar == 23 or secondVar == 123456:
     print("At least one condition is true")
+# "or" keyword can be replaced with |
+#if firstVar == 23 | secondVar == 123456: 
 
 """"
     #? IMPORTANT
